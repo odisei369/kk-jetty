@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java-kick-off</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+    <!--http://www.google.com/fonts -->
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('fonts/DroidSerif.ttf');
+      }
+      
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('fonts/DroidSerif-Bold.ttf');
+        font-weight: bold;
+      }
+
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('fonts/DroidSerif-Italic.ttf');
+        font-style: italic;
+      }
+
+      @font-face{
+        font-family: 'Droid Serif';
+        src: url('fonts/DroidSerif-BoldItalic.ttf');
+        font-weight: bold;
+        font-style: italic;
+      }      
+      
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('fonts/UbuntuMono-Regular.ttf');
+      }    
+      
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('fonts/UbuntuMono-Bold.ttf');
+        font-weight: bold;
+      }
+
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('fonts/UbuntuMono-Italic.ttf');
+        font-style: italic;
+      }
+
+      @font-face{
+        font-family: 'Ubuntu Mono';
+        src: url('fonts/UbuntuMono-BoldItalic.ttf');
+        font-weight: bold;
+        font-style: italic;
+      }          
+      
+      body { font-family: 'Droid Serif'; } 	  
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }  
+      
+    </style>
+	<link rel="stylesheet" href="mermaid.css">
+	<!-- /* Slideshow styles */ -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">	
+
+  </head>
+  <body>
+    <textarea id="source">
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Bootcamp Java]
+<br/><br/>
+##.right[Kick-off]
+<br/><br/><br/>
+_.right.tt[k.koziol@sages.com.pl]_
+.left[![:scale 10%](img/sages.png)]
+
+---
+layout:true
+class: slaid
+background-image: url(img/kl-slaid43.png)
+
+---
+class: middle
+# Jak będzie przebiegał warsztat
+.big[
+- Bootcamp – nowa droga do zawodu programisty  
+- **Warsztat**
+  - Pogadanka o zawodzie programisty
+  - Zakodujmy coś wreście - czyli warsztat właściwy ;) 
+- Lunch
+- **Warsztat cd.**
+  - Kodowania ciąg dalszy
+- Zakończenie
+]
+
+---
+#To i owo o Prowadzącym...
+##mgr inż. Krzysztof Kozioł
+.left-column64[
+- Ponad 20 lat w zawodzie
+- Głównie praca z Java, Orcale i PL/SQL
+- Trener w Sages zaangażowany w Stacje.it
+  - http://stacja.it
+- Współorganizator konferencji Confitura
+  - http://confitura.pl
+  - [kanał YT](https://www.youtube.com/channel/UCkVjQGf_e0JmlonPMS4VNXQ)
+- Zaangażowany w WJUG 
+  - http://warszawa.jug.pl
+  - http://jinkubator.pl
+  - [kanał YT](https://www.youtube.com/channel/UC2coGyxf5x_CzJ3l4F-N-Sw)
+- LinkedIn https://pl.linkedin.com/in/krzysiekkoziol
+
+]
+.right-column64[
+.right[![:scale 71%](img/kkoziol2.jpg)]
+]
+
+.right[
+![:scale 15%](img/confitura.jpg)
+![:scale 15%](img/wjug.jpg)]
+
+---
+class: middle
+.left-column64[
+# Plan pogadanki 
+
+- Programista - kto to taki i co on robi?
+- Jakie "trzeba" mieć predyspozycje by nim być?
+- Co trzeba umieć, by było łatwiej?
+- Możliwe scieżki dalszej kariery?
+- Czego się będziemy uczyć w ramach bootcampu.
+- Dlaczego akurat tego?
+
+<br/>
+]
+.right-column64[
+.right[![:scale 90%](img/kk-wanted.png)]
+]
+ 
+#### Aby zostać poszukiwanym programistą,
+#### trzeba wziąść udział w Java Boot Camp ;)
+
+???
+http://www.mobilefish.com/services/wanted_poster/wanted_poster.php
+.one-column[]
+  
+---
+layout:false
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Programista ]
+<br/><br/>
+##.right[kto to taki i co on robi?]
+<br/><br/><br/><br/>
+.left[![:scale 10%](img/sages.png)]
+
+---
+layout:true
+class: slaid
+background-image: url(img/kl-slaid43.png)
+
+---
+class: middle
+
+## Programista.red.bold[*]:  
+.big[
+(gw. „deweloper”/„developer”, „koder”; czasem: inżynier oprogramowania)  
+
+osoba, która tworzy programy komputerowe w pewnym języku programowania. 
+
+Większość programistów zna co najmniej kilka języków programowania  
+(np. C, C++, Java), lecz specjalizuje się tylko w wybranych z nich.
+Nazwa głównego języka jest często dodawana do nazwy stanowiska,  
+np. programista Java, aby podkreślić specjalizację.
+]
+.left.footnote[.red.bold[*] Źródło Wikipedia]
+---
+class: top
+## Na czym polega praca programisty
+
+- pisanie programów ;) .small[(często tylko *kawałków*)  ]
+
+--
+- poprawianie, utrzymywanie istniejącego oprogramowania .small[(kodu źródłowego)]
+
+--
+<br/><br/><br/>
+.center.huge[Ale czy aby tylko tyle?]
+
+---
+class: top
+## Na czym polega praca programisty
+
+- pisanie programów ;) .small[(często tylko *kawałków*)  ]
+- poprawianie, utrzymywanie istniejącego oprogramowania .small[(kodu źródłowego)]
+- testowanie stworzonego kodu .small[(testy jednostkowe, integracyjne, akceptacyjne)]
+
+--
+<br/><br/><br/>
+.center.huge[Może coś jeszcze?]
+
+---
+class: top
+## Na czym polega praca programisty
+
+- pisanie programów ;) .small[(często tylko *kawałków*)  ]
+- poprawianie, utrzymywanie istniejącego oprogramowania .small[(kodu źródłowego)]
+- testowanie stworzonego kodu .small[(testy jednostkowe, integracyjne, akceptacyjne)]
+- analiza wymagań.red.bold[*] .small[(czyli co własciwie *zamawiający* chce by zakodować?)]
+- zamiana wymagań na kod .small[(czyli własciwe programowanie :))]
+- podział na taski .small[(Czyli podział dużych zadań do wykonania, na mniejsze)]
+
+--
+- dokonywanie wycen, estymacji pracochłonności.red.bold[*] .small[(Ile czasu zajmie ci napisanie tego kodu?)] 
+
+.left.footnote[.red.bold[*]W projektach __Agile'owych__, w innch często wystepują oddzielne stanowiska do tych zadań]
+
+--
+#### W jakich proporcjach występują te zajęcia?
+- 30% - 60% własciwe programowanie
+- 40% - 70% pozostałe zajęcia
+
+--
+<br/><br/>
+.center.big[Trzeba się ciągle uczyć!]
+
+---
+layout:false
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Predyspozycje]
+<br/><br/>
+##.right[jakie przydadzą się]
+##.right[by być programistą]
+<br/>
+.left[![:scale 10%](img/sages.png)]
+
+---
+layout:true
+class: slaid
+background-image: url(img/kl-slaid43.png)
+
+---
+class: top
+
+##Cechy idealnego programisty
+
+1. umiejętność logicznego myślenia
+
+--
+1. umiejętność abstrakcyjnego myślenia
+
+--
+1. duża wyobraźnia
+
+--
+1. dokładność
+
+--
+1. cierpliwość
+
+--
+1. umiejętność pracy w zespole
+
+--
+1. umiejętności miękkie, komunikatowyność, empatia, itp.
+
+--
+1. kreatywność
+
+--
+1. dociekliwość
+
+--
+1. wytrwałość w dążeniu do celu
+
+--
+1. umiejętność jedzenia słonia
+
+--
+  + czyli dzielenia problemu na kawałki
+
+
+---
+layout:false
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Umiejętności]
+<br/><br/>
+##.right[ułatwiające codzienną pracę]
+<br/><br/><br/><br/>
+.left[![:scale 10%](img/sages.png)]
+
+---
+layout:true
+class: slaid
+background-image: url(img/kl-slaid43.png)
+
+---
+class: top
+
+##Umiejetności ułatwiające pracę 
+
+1. angielski przynajmniej w czytaniu i pisaniu
+
+--
+1. obsługa komputera na tip top ;)
+  - łacznie z instalacja... choć da rade bez
+  - Linux w przypadku javy, mocno sie przydaje
+  - znajomość budowy komputera (procesor pamiec, dzyski, siec)
+  - file-fystemy,pliki - rodzaje
+  - formaty plików
+  - Excel, Word, ... raczej nie ;)
+--
+  - Visual Basic juz tak ;)
+
+--
+1. wiedza ogólna wspolna dla wszystkich języków programowania
+  - algorytmy
+  - wzorce projektowe
+  - kompilacja
+  - debugowanie
+  - profilowanie
+
+--
+1. sieci komputerowe
+  - TCP/IP, DNS, porty itp
+  - HTML, CSS
+  - HTTP - też się przyda
+
+---
+layout:false
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Programista ...]
+<br/><br/>
+##.right[różne scieżki kariery]
+<br/><br/><br/><br/>
+.left[![:scale 10%](img/sages.png)]
+
+---
+layout:true
+class: slaid
+background-image: url(img/kl-slaid43.png)
+
+---
+# Gdzie można pracować?
+
+--
+### i co z tego wynika
+
+--
+- software house - producent oprogramowanie (dostawca)
+  - duży
+  - mały
+
+--
+- startup - nowa startująca firma softwareowa/*biznesowa*  
+
+--
+- "byznes"
+  - prywatny
+  - budrzetowy
+
+--
+
+<br/><br/>
+- firma
+  - polska
+  - zagraniczna  
+---
+class: top
+
+## "Co" można robić:
+
+> 
+czyli rodzaje programistów Java - podział na obszary
+> 
+
+
+--
+- backend
+
+--
+- frontend
+
+--
+- full stack
+
+--
+- data scientist
+
+--
+- Integracja - WS/REST (backend, backend for frontend)
+
+--
+- biznes vs. tech oriented
+  - lib/frameworks
+  - support
+
+Pewnie jeszcze cos byśmy wymyślili...  
+  
+---
+class: top
+
+## "Co" można robić:
+
+> 
+czyli rodzaje programistów Java - podział na technologie
+> 
+
+- JEE .small[(wszystkie obszary)]
+- Spring .small[(wszystkie obszary)]
+- inne
+
+--
+- Swing .small[(frontend)]
+- Java FX .small[(frontend)]
+- JSF/ADF .small[(frontend)]
+- GWT .small[(frontend)]
+- ...
+
+Pewnie jeszcze cos byśmy wymyślili...  
+tak szybko się to zmienia.
+
+---
+layout:false
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Programista full-stack]
+<br/><br/>
+##.right[czyli "wszystko umiejący" ;)]
+<br/><br/><br/><br/>
+.left[![:scale 10%](img/sages.png)]
+
+---
+layout:true
+class: slaid
+background-image: url(img/kl-slaid43.png)
+
+---
+class: top
+
+# Full-stack Spring Java developer
+> 
+czyli twój profil po ukończeniu Bootcampu
+> 
+
+- Java ;) 
+
+--
+- Wzorce GOF .small[(czyli rozwiązania typowych problemów)]
+- SOLID i Clean Code .small[(czyli dobre praktyki)]
+
+--
+- Spring .small[(jako solidna podstawa i klej do reszty technologii)]
+
+--
+- SQL i Postgress .small[(bazy danych)] 
+
+--
+- Jetty lub Tomcat .small[(serwery webowe)]
+
+--
+- Heroku .small[(cloud)]
+
+--
+- REST .small[(webserwisy)]
+- Thymeleaf .small[(frontend)]
+
+--
+- GIT
+- JUnit, Mockito, AssertJ .small[(testy jednostkowe, itd)]
+- Eclipse .small[(IDE - Integrated Development Environment)]
+- Maven .small[(nasz główny budowniczy)]
+
+--
+.right[Dlaczego akurat takie?]
+
+---
+layout:false
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Warsztat]
+<br/><br/>
+##.right[zakodujmy coś wreście ;)]
+<br/><br/><br/><br/>
+.left[![:scale 10%](img/sages.png)]
+
+---
+layout:true
+class: slaid
+background-image: url(img/kl-slaid43.png)
+
+---
+class: top
+
+# .center[GitHub]
+
+- zakładamy konto
+
+--
+- forkujemy projekt **kkoziol/kk-jetty**
+
+--
+- odszukujemy projekt **kkoziol/bootcamp-slajdy** i pobieramy jako **zip**
+- rozpakowujemy lokalnie na komputerze.
+
+--
+- forkujemy projekt **heroku/java-getting-started**
+
+---
+class: top
+
+# .center[Heroku]
+
+- zakładamy konto
+
+--
+- tworzymy nowa aplikację: **bootcamp-slajdy**
+
+--
+- w zakładce deploy podpinamy repozytorium **kk-jetty** z GitHuba
+- klikamy *Deploy* .small[(Zainstaluj/wdróż aplikację)]
+- klikamy *Open app*
+
+---
+# Slajdy na Heroku
+
+- repozytorium **kk-jetty**
+- kopiujemy slajdy do katalogu webapp
+- komitujemy
+- wracamy do Heroku i odswieżamy aplikację
+
+---
+# java-getting-started
+
+- zforkowany wczesniej projekt obladamy sobie na Githubie
+- klikamy w Github *Deploy Heroku*, twoży nam się nowa aplikacja.
+- uruchamiamy i oglądamy ja sobie
+
+---
+# Zadania
+
+BCD-1 Dodać link do podstrony hello na głównej stronie
+
+BCD-2 Strone hello przerobic tak by miala wyglad strony domowej
+
+BCD-3 Dodać nowe elemeny na stronie hello
+
+BCD-4 Dodać link do podstrony db na głównej stronie
+
+BCD-5 Refaktoring nawigacji
+
+BCD-6 gitignore - dodac pliki techniczne eclipsy
+
+BCD-7 Poprawić domyślne kodowanie znaków w projekcie
+
+BCD-8 ERROR Brak możliwości testowania aplikacji z baza danych lokalnie.
+
+---
+## BCD-1
+###Dodać link do podstrony **hello** na głównej stronie
+
+Dodać link do podstrony hello na głównej stronie, w menu zaraz za "home".
+
+## nav.ftl
+```code
+<li>
+   <a href="hello"><span class="glyphicon glyphicon-user"></span> Hello</a>
+</li> 
+```
+---
+## BCD-2
+### Stronę **hello** przerobić tak by miała wygląd strony domowej
+
+Według projektu **hello-project.png**
+Proszę zwrócić uwagę na podświetlenie menu!
+
+![:scale 68%](img/hello-project.png)
+
+---
+
+- nowy template **hello.ftl**
+- nowy template **nav-hello.ftl**
+- zmiana **header.ftl**
+
+```code
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="pl">
+```
+- zmiana **Main.java**
+
+```java
+    get("/hello", (request, response) -> {
+        Map<String, Object> attributes = new HashMap<>();
+        attributes.put("message", "Hello World!");
+
+        return new ModelAndView(attributes, "hello.ftl");
+    }, new FreeMarkerEngine());
+```
+
+---
+##BCD-3
+### Dodać nowe elemeny na stronie **hello**
+
+Stronę hallo przerobić według projektu  **hello-project-2.png**
+
+![:scale 72%](img/hello-project-2.png)
+
+---
+
+- nowa zależność w **pom.xml**
+
+```code
+		<dependency>
+			<groupId>org.jscience</groupId>
+			<artifactId>jscience</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+```
+
+- zmiana **Main.java**
+
+```code
+        attributes.put("message", "Spark i Freemaker w akcji!");
+        
+        RelativisticModel.select();
+        Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
+        String massMessage = "E=mc^2: 12 GeV = " + m.toString();
+        attributes.put("massMessage", massMessage);
+        
+        Amount<Energy> e = Amount.valueOf("100 kg").to(SI.GIGA(NonSI.ELECTRON_VOLT));
+        String energyMessage = "E=mc^2: 100 kg = " + e.toString();
+        attributes.put("energyMessage", energyMessage);
+```
+
+- zmiana w **hello.ftl**
+
+albo moze sprobojmy najpierw zadeplojować na Heroku.
+
+---
+## .center[Robimy pożądne środowisko programistyczne.]
+
+- rozpakowujemy pobrane wczesniej installki
+- instalujemy Jave
+- instalujemy Git
+- instalujemy Heroku tools
+- instalujemy Eclipse
+- [https://devcenter.heroku.com/articles/getting-started-with-java#introduction](https://devcenter.heroku.com/articles/getting-started-with-java#introduction)
+
+---
+##BCD-4
+### Dodać link do podstrony **db** na głównej stronie
+
+Dodać link do podstrony db na głównej stronie, w menu zaraz za "hello".
+
+---
+##BCD-5
+### Refaktoring nawigacji
+
+Dotychczasowe rozwiązanie nawigacji jest nie efektywne, narusza zasadę DRY.
+
+Dokonać refaktoryzacji, wprowadzić zmienne do templejtu nawigacji.
+
+---
+##BCD-6
+### gitignore - dodać pliki techniczne eclipsy
+
+---
+##BCD-7
+### Poprawić domyślne kodowanie znaków w projekcie
+
+Podczas budowania aplikacji mavenem, wystepuje ostrzeżenie następującej tresci:
+
+.tt[
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ helloworld ---
+
+[WARNING] Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+]
+
+Poprawić konfigurację projektu w pom.xml. Ustawić domyślne kodowanie na UTF-8
+
+Rozwiązanie:
+```code
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+```
+---
+##BCD-8 ERROR
+### Brak możliwości testowania aplikacji z bazą danych lokalnie.
+
+Na srodowisku lokalnym, aplikacja nie łączy sie do bazy, w związku z czym nie mozna tesotwać danej funkcjonalności lokalnie!
+
+.tt[
+There was an error: org.postgresql.util.PSQLException: FATAL....
+]
+
+---
+layout:false
+background-image: url(img/kl-title43.png)
+class: title-slaid, center, middle
+<br/><br/><br/><br/>
+#.center[Koniec]
+<br/><br/>
+##.right[Zapraszam na Boot Camp]
+<br/><br/><br/><br/>
+.left[![:scale 10%](img/sages.png)]
+
+    </textarea>
+    <script src="js/remark-latest.min.js">
+    </script>
+	
+    <script src="js/mermaid.min.js"></script>
+    
+ <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>	
+	
+    <script>	  
+      remark.macros.scale = function (percentage) {
+         var url = this;
+         return '<img src="' + url + '" style="width: ' + percentage + '" />';
+      };	  
+	
+      var slideshow = remark.create({
+      // Set the slideshow display ratio
+      // Default: '4:3'
+      // Alternatives: '16:9', ...
+      ratio: '4:3',
+
+      // Navigation options
+      navigation: {
+      // Enable or disable navigating using scroll
+      // Default: true
+      // Alternatives: false
+      scroll: false,
+
+      // Enable or disable navigation using touch
+      // Default: true
+      // Alternatives: false
+      touch: false,
+
+      // Enable or disable navigation using click
+      // Default: false
+      // Alternatives: true
+      click: false
+	  },
+      // Customize slide number label, either using a format string..
+      slideNumberFormat: 'Slide %current% of %total%',
+      // .. or by using a format function
+      slideNumberFormat: function (current, total) {
+      return current + '/' + total;
+      },
+
+      // Enable or disable counting of incremental slides in the slide counting
+      countIncrementalSlides: true,
+	  /*highlightLanguage: 'java',*/
+      /*arta, ascetic, dark, default, far, github, googlecode, idea, ir_black, magula, monokai, rainbow, solarized-dark, solarized-light, sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright, tomorrow-night, tomorrow-night-eighties, vs, zenburn */
+      highlightStyle: 'magula',
+	  highlightLines: true
+	  });
+	  
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+      });
+      MathJax.Hub.Queue(function() {
+          $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+              return(elem.SourceElement());
+          }).parent().addClass('has-jax');
+      });
+
+      MathJax.Hub.Configured();	  	  
+    </script>	
+    <script>mermaid.initialize({startOnLoad:true});</script>		
+  </body>
+</html>

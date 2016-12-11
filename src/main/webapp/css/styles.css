@@ -1,0 +1,269 @@
+/* Sages */
+/* fitting in backgrounds*/
+.remark-slide-content{
+    padding-top: 2.8em;
+    padding-bottom: 2.5em;
+    padding-left: 3.7em;
+    padding-right: 2.5em;
+}
+/* title slajd*/
+.title-slaid {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.title-slaid h1 {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+/* slajd */
+.slaid {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: Ubuntu;
+    counter-reset: item;
+}
+/* styled lists*/
+ol {
+    list-style: none;
+    counter-reset: item;
+ }
+ol li {
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+ol li:before {
+   margin-right: 10px;
+   content: counter(item);
+   color: blue;
+   #width: 1em;
+   text-align: center;
+   display: inline-block;
+ }
+ol li li:before {
+   margin-right: 10px;
+   content: counter(item);
+   color: lightblue;
+   #width: 1em;
+   text-align: center;
+   display: inline-block;
+ } 
+ul {
+    list-style: none;
+    counter-reset: item;
+}
+ul li { 
+    margin-bottom: 5px;
+}
+ul li:before {
+    margin-right: 10px;
+    content: "■ ";
+    color: blue;
+    text-align: center;
+    display: inline-block;
+} 
+ul li li:before {
+    margin-right: 10px;
+    content: "■ ";
+    color: lightblue;
+    text-align: center;
+    display: inline-block;
+}
+ol ul li:before {
+    margin-right: 10px;
+    content: "■ ";
+    color: blue;
+    text-align: center;
+    display: inline-block;
+} 
+ 
+li li {
+  font-size: 0.89em;
+}
+blockquote {
+  border-left: 0.3em solid lightblue;
+  padding: 0 15px;
+  font-style: italic;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h4  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+code {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  padding: 9px;
+}
+
+.box h2, .box h3, .box h4, .box h5{
+  margin-left: 10px;
+}
+
+.label {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 3px 5px 4px 4px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 0.75em;
+  left: 10px;
+  top: -10px;
+  position: relative;
+}
+
+div.box p{
+  position: relative;
+  top: -20px;
+  margin-bottom: 0px; 
+  height: 0px;  
+}
+div.box ul , div.box ol{
+  position: relative;
+  top: -10px;
+  margin-bottom: 0px;  
+}
+div.box li, div.box ul ul, div.box ol ul, div.box ol ol, div.box ul ol{
+  position: relative;
+  top: -0px;
+  margin-bottom: 0px;  
+}
+.box.moody .label {
+  background-color: #F89406;
+}
+
+.box.happy .label {
+  background-color: #46A546;
+}
+
+.box.angry .label {
+  background-color: #C43C35;
+}
+
+div.box, code {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+  font-size: 0.9em;
+}
+
+.angry {
+  background-color: #FFD7D5;
+  border-color: #C43C35;
+}
+
+.happy {
+  background-color: #C0E0C0;
+  border-color: #46a546;
+}
+
+.moody {
+  background-color: #FFECD1;
+  border-color: #F89406;
+}
+
+.clock {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 60px;
+  text-align: center;
+  font-size: 0.7em;
+}
+.tt {
+  font-family: courier;
+  font-weight: bold;
+  font-size: 0.85em;
+
+}
+
+.red {
+  color: #fa0000;
+}
+
+.white {
+  color: white;
+}
+
+.tinny {
+  font-size: 0.6em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.big {
+  font-size: 1.5em;
+}
+.huge{
+  font-size: 2.0em;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+}
+
+/* Two-column layout */
+.left-column {
+  width: 50%;
+  float: left;
+}
+.right-column {
+  width: 50%;
+  float: right;
+}
+.left-column64 {
+  width: 60%;
+  float: left;
+}
+.right-column64 {
+  width: 40%;
+  float: right;
+}
+
+.one-column {
+  width: 100%;
+}
+/* slides */
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid black;
+}
+th {
+    text-align: center!important;
+    background-color: lightblue; 
+    color: black;
+} 
+th, td {
+    padding: 5px;
+ }
+tr:hover {background-color: #f5f5f5}
+
+
